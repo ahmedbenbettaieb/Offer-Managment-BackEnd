@@ -51,7 +51,7 @@ module.exports = {
     );
   },
   deleteById: function (req, res, next) {
-    offerModel.findByIdAndRemove(req.params.movieId, function (err, offerInfo) {
+    offerModel.findByIdAndRemove(req.params.offerId, function (err, offerInfo) {
       if (err) next(err);
       else {
         res.json({
